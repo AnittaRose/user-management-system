@@ -1,0 +1,108 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:url(https://media.istockphoto.com/id/1322669600/vector/light-grey-coloured-rough-grunge-gradient-blank-and-empty-textured-vector-backgrounds.jpg?s=612x612&w=0&k=20&c=Jf-RpXU_IKjFkloxmB73blbRWQrbc75guMgiRPCiGSk=)no-repeat;
+    background-size: cover;
+}
+/* 2 */
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .logo{
+    width: 50px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      inset -7px -7px 10px 0px rgba(0,0,0,.1),7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    text-shadow:  2px 2px 3px rgba(255,255,255,.5),
+                -4px -4px 6px rgba(116, 125, 136, .2);
+    outline: none;
+}
+.btn-2 {
+    background-color: rgb(247, 247, 247);
+    color: #000;
+    border: none;
+
+}
+.btn-2:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-2:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+            -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+            inset -4px -4px 6px 0 rgba(255,255,255,.2),
+            inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.btn-16 {
+    border: none;
+    color: #000;
+}
+.btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    border-radius: 50px;
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+.btn-16:hover {
+    color: #bbb;
+}
+.btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.btn-16:active {
+    top: 2px;
+}
+tbody, td,  tfoot, th, thead, tr{
+    /* border-color: whitesmoke; 
+    border-style: ;
+    border-width: 0; */
+}
+.table>:not(caption)>*>* {
+    padding: .5rem .5rem;
+    /* background-color: var(--bs-table-bg); */
+    /* border-bottom-width: 1px; */
+    /* box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg); */
+}
+.user-icon{
+    width: 30px;
+}

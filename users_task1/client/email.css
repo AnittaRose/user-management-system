@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mail{
+    background-color: rgb(255, 255, 255);
+}
+
+.email-img{
+    width: 700px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addpage</title>
+    <link rel="stylesheet" href="./add.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container">
+            <div class="curved-shape"></div>
+        <div class="form-box Login">
+                <h2>Add Users</h2>
+                <form onsubmit="adduser(event)">
+                    <div class="input-box">
+                        <input type="text"  id="username" required>
+                        <label for="">Username</label>
+                        <i class='bx bxs-user' style='color:#ffffff'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="email" required>
+                        <label for="">Email</label>
+                        <i class='bx bx-envelope' style='color:#ffffff'></i>
+                    </div>
+                    <!-- <div class="input-box">
+                        <input type="text" id="password" required>
+                        <label for="">Password</label>
+                        <i class='bx bx-lock-alt' style='color: #ffffff;'></i>
+                    </div> -->
+
+                    <div class="input-box">
+                       
+                        <select name="" id="user_type"  required>
+                            <option value="Admin" class="opt">Admin</option>
+                            <option value="Employee" class="opt">Employee</option>
+                        </select>
+                    </div>
+                    
+
+                    <div class="input-box">
+                        <button class="btn" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="info-content Login">
+                <h2>WELCOME BACK!</h2>
+                <P>Create Your Profile</P>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

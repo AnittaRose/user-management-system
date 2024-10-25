@@ -1,0 +1,106 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+.lock{
+    width: 50px;
+    height: 50px;
+    
+}
+.recent{
+    font-size: 13px;
+}
+.btn{
+    position: relative;
+    width: 70%;
+    border: 1px solid grey;
+    border-radius: 40px;
+    
+}
+body{
+    background: url(https://i.pinimg.com/474x/cb/c4/40/cbc4402a7a9503dc6618c333183557b6.jpg)no-repeat;
+    background-size: cover;
+} */
+
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    background-color: rgb(43,91,145);
+}
+* {
+    box-sizing: border-box;
+}
+.input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.icon {
+    padding: 10px;
+    background: green;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+/* Set a style for the submit button */
+.btn {
+    /* background-color: dodgerblue; */
+    background-color: grey;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.btn:hover {
+    opacity: 1;
+}
+.fa-passwd-reset>.fa-lock {
+    font-size: 0.85rem;
+}
+.background{
+    background-color:white;
+    width: 98%;
+    /* padding: 10px; */
+    margin: 10px;
+    border-radius: 8px;
+    height: 97vh;
+}
+.password-image{
+    width: 80%;
+
+
+}
+.reset{
+    color: rgb(43,91,145);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 22.857 1px;
+    /* border-bottom: 2px solid rgb(43,91,145); */
+    width:10%;
+    padding-left:100px 0px 0px 100px;
+    
+}
+.newone{
+    color: rgb(43,91,145);
+}
+.change{
+    background-color: rgb(43,91,145);
+    color: white;
+    font-size: 15px;
+    border-color: rgb(43,91,145);
+}
+
