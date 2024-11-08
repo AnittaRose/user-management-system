@@ -113,10 +113,10 @@ exports.addusers = async function (req, res) {
 
 exports.viewusers = async function (req,res){
     try {
-        let sections = await users.find();
+        let sections = await users.find({user_type : {$ne:'67029a691240a5ff40dd0dfe'}});
         console.log('sections',sections)
         // let strsection = JSON.stringify(sections);
-
+ 
         let response = successfunction({
             success: true,
             statuscode: 200,

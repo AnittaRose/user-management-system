@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     letter-spacing: 1px;
-    background-color: rgb(0, 0, 0);
+    background-color:#D8EFD3;
 }
   .login_form_container{
       position: relative;
@@ -18,7 +18,7 @@ body {
       height: 470px;
       max-width: 400px;
       max-height: 470px;
-      background: #040717;
+      background:#F1F8E8;
       border-radius: 50px 5px;
       display: flex;
       align-items: center;
@@ -37,7 +37,7 @@ body {
   
   }
   .forgot{
-        color:  #00ccff;
+        color: black;
   }
   .login_form_container::after{
       
@@ -60,12 +60,12 @@ body {
   .login_form{
       position: absolute;
       content: '';
-      background-color: #0c1022;
+      background-color:#F1F8E8;
       border-radius: 50px 5px;
       inset: 5px;
       padding: 50px 40px;
       z-index: 10;
-      color: #00ccff;
+      color:black;
   
   } 
   h2{
@@ -86,14 +86,14 @@ body {
       background: transparent;
       border: none;
       outline: none;
-      border-bottom: 1px solid #00ccff;
+      border-bottom: 1px solid black;
       font-size: 20px;
       padding-left: 10px;
-      color: #00ccff;
+      color: black;
   }
   ::placeholder{
       font-size: 15px;
-      color: #00ccff52;
+      color: black;
       letter-spacing: 1px;
   
   }
@@ -118,11 +118,11 @@ body {
       z-index: 10;
       cursor: pointer;
       font-size: 22px;
-      color: #00ccff;
+      color: black;
       letter-spacing: 2px;
-      border: 1px solid #00ccff;
+      border: 1px solid #55AD9B;
       border-radius: 50px;
-      background-color: #0c1022;
+      background-color: #55AD9B;
       display: flex;
       justify-content: center;
       align-items: center;

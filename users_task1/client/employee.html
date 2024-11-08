@@ -12,18 +12,16 @@
     <link rel="stylesheet" href="./employee.css">
     <!-- <link rel="stylesheet" href="./admin.css"> -->
   </head>
-  <body onload="viewPort()">
-
-    
-    <div class="bg-dark p-3">
+  <body onload="viewPort()" class="body">
+    <div class="bg-light p-1">
       <div class="d-flex justify-content-between align-items-center container">
-        <div class="text-white fs-3">Employee</div>
+        <div class="link-dark fs-4">Employee</div>
         <div class="">
           <div class="d-flex justify-content-between align-items-center">
-            <div class="px-2"><a href="./index.html" class="text-decoration-none link-light">Home</a></div>
-            <div class="px-2"><a href="" class="text-decoration-none link-light">About Us</a></div>
-            <div class="px-2"><a href="" class="text-decoration-none link-light">Blog</a></div>
-            <div class="px-2"><a href="" class="text-decoration-none link-light">Contact Us</a></div>
+            <div class="px-2"><a href="./index.html" class="text-decoration-none link-dark">Home</a></div>
+            <div class="px-2"><a href="" class="text-decoration-none link-dark">About Us</a></div>
+            <div class="px-2"><a href="" class="text-decoration-none link-dark">Blog</a></div>
+            <div class="px-2"><a href="" class="text-decoration-none link-dark">Contact Us</a></div>
             <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
               aria-controls="offcanvasRight"><i class="fa fa-bars" style="font-size:24px"></i>
             </button>
@@ -35,7 +33,7 @@
                   aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
-                <!-- <div class=""><button class="custom-btn btn-2 fw-bold" onclick="addpage(event)">Add</button></div> -->
+                <div class="text-center pt-3"><button onclick="resetuser()" class="btn btn-secondary link-light px-3">Reset</button></div>
                 <div class=""><button class="custom-btn btn-2 fw-bold" onclick="signout()">Log Out</button></div>
               </div>
             </div>

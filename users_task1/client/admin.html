@@ -16,21 +16,33 @@
 
 </head>
 
-<body onload="listView(event)">
-  <div class="bg-dark">
+<body onload="listView(event)" class="body">
+  <div class="nav">
     <!-- <div class=""><img src="https://img.freepik.com/free-vector/abstract-people-team-background-design_23-2147493323.jpg?ga=GA1.1.392549930.1719407083&semt=ais_hybrid" class="logo" alt=""></div> -->
     <div class="d-flex justify-content-between align-items-center container">
-      <div class="text-white">Admin</div>
+      <div class="link-dark fw-bold fs-3"><img src="./images/ums-letter-logo-design-with-polygon-shape-ums-polygon-and-cube-shape-logo-design-ums-hexagon-logo-template-white-and-black-colors-ums-monogram-business-and-real-estate-.png" class="logoo" alt=""></div>
       <div class="">
         <div class="d-flex justify-content-between align-items-center">
-          <div class="px-2"><a href="./index.html" class="text-decoration-none link-light">Home</a></div>
-          <div class="px-2"><a href="" class="text-decoration-none link-light">About Us</a></div>
-          <div class="px-2"><a href="" class="text-decoration-none link-light">Blog</a></div>
-          <div class="px-2"><a href="" class="text-decoration-none link-light">Contact Us</a></div>
+          <div class="px-2"><a href="./index.html" class="text-decoration-none link-dark fw-bold">Home</a></div>
+          <div class="px-2"><a href="" class="text-decoration-none link-dark fw-bold">About Us</a></div>
+          <div class="px-2"><a href="" class="text-decoration-none link-dark fw-bold">Blog</a></div>
+          <div class="px-2"><a href="" class="text-decoration-none link-dark fw-bold">Contact Us</a></div>
           <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight"><i class="fa fa-bars" style="font-size:24px"></i>
           </button>
-          <span class=""><img src="https://img.icons8.com/?size=100&id=86280&format=png&color=FFFFFF" class="user-icon" alt=""></span>
+
+          <span class=""><img src="https://img.icons8.com/?size=100&id=86280&format=png&color=FFFFFF" class="user-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" alt=""></span>
+          <!-- <button class="btn btn-primary" type="button" >Toggle top offcanvas</button> -->
+
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            ...
+          </div>
+        </div>
 
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
@@ -39,8 +51,8 @@
                 aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <div class=""><button class="custom-btn btn-2 fw-bold" onclick="addpage(event)">Add</button></div>
-              <div class=""><button class="custom-btn btn-2 fw-bold" onclick="signout()">Log Out</button></div>
+              <div class=""><button class="bttn px-5 p-2" onclick="addpage(event)">Add</button></div>
+              <div class=""><button class="bttn px-5 p-2" onclick="signout()">Log Out</button></div>
             </div>
           </div>
 
@@ -53,15 +65,15 @@
 
   <table class="table container pt-5">
     <thead>
-      <tr class="link-danger text-center">
-        <th scope="col">_id</th>
+      <tr class="tr text-center">
+        
         <th scope="col">Name</th>
         <th scope="col">Email</th>
         <th scope="col">View</th>
 
       </tr>
     </thead>
-    <tbody id="userTable" class=" fw-bold text-center">
+    <tbody id="userTable" class="tab fw-bold text-center">
 
     </tbody>
   </table>
