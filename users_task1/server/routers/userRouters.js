@@ -26,4 +26,5 @@ router.patch('/reset-password', setAccessControl('*'),usercontroller.passwordRes
 
 
 
+
 module.exports = router

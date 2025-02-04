@@ -1,4 +1,4 @@
-const users = require ('../db/models/users')
+const users = require ('../db/models/Employe')
 const { successfunction, errorfunction } = require('../util/responsehandler')
 const bcrypt = require ('bcrypt')
 const user = require('../db/models/user_types')
@@ -109,8 +109,6 @@ exports.addusers = async function (req, res) {
       return;
   }
 };
-
-
 exports.viewusers = async function (req,res){
     try {
         let sections = await users.find({user_type : {$ne:'67029a691240a5ff40dd0dfe'}});
@@ -140,7 +138,6 @@ exports.viewusers = async function (req,res){
         return;
     }
 };
-
 exports.singleusers = async function(req,res){
 
    try {
@@ -174,7 +171,6 @@ exports.singleusers = async function(req,res){
 
    }   
 };
-
 exports.deleteusers = async function(req,res){
     try {
         let delete_id =req.params.id;
@@ -186,7 +182,6 @@ exports.deleteusers = async function(req,res){
         console.log('error',error)
     }
 }
-
 exports.editusers = async function(req,res){
     try {
         let body = req.body;
@@ -234,17 +229,13 @@ exports.editusers = async function(req,res){
         return;
     }
 };
-
 exports.updatePassword = async function (req,res){
     try {
         let  _id = req.params.id
         console.log(_id);
     
-        let user = await users.findOne({_id : _id})
+        let user = await employe.findOne({_id : _id})
         console.log("user :",user);
-    
-        // let passwordMatch =  bcrypt.compareSync(req.body.password,user.password);
-        // console.log("passwordMatch",passwordMatch);
     
         const passwordMatch = bcrypt.compareSync(req.body.password, user.password);
         console.log("passwordMatch: ", passwordMatch);
@@ -263,7 +254,7 @@ exports.updatePassword = async function (req,res){
 
 
 
-            let updatePassword = await users.updateOne({_id},{$set:{password : req.body.password}});
+            let updatePassword = await employe.updateOne({_id},{$set:{password : req.body.password}});
             console.log(updatePassword)
 
             
@@ -290,8 +281,6 @@ exports.updatePassword = async function (req,res){
         return;
     } 
 };
-
-
 // exports.updatePassword = async function (req, res) {
 //     try {
 //         let currentData = req.body.password;
@@ -322,7 +311,6 @@ exports.updatePassword = async function (req,res){
 //         res.status(500).send("Internal server error");
 //     }
 // };
-
 exports.forgotPasswordController = async function (req, res) {
     try {
       let email = req.body.email;
@@ -390,7 +378,6 @@ exports.forgotPasswordController = async function (req, res) {
         return;
     } 
 };
-
 exports.passwordResetController = async function (req, res) {
   try {
     const authHeader = req.headers["authorization"];
@@ -457,3 +444,5 @@ exports.passwordResetController = async function (req, res) {
     return;
   }
 };
+
+

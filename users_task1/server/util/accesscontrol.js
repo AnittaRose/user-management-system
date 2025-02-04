@@ -1,6 +1,6 @@
 const successfunction = require('../util/responsehandler').successfunction;
 const errorfunction = require('../util/responsehandler').errorfunction;
-const users = require('../db/models/users')
+const users = require('../db/models/Employe')
 // const user_type = require('../db/models/user_types');
 const jwt = require('jsonwebtoken');
 
